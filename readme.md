@@ -21,3 +21,6 @@ theme: clover
 npm install hexo-renderer-sass --save
 ```
 
+## License
+
+MIT
