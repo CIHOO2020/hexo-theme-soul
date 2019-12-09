@@ -1,7 +1,8 @@
-html{
+html {
   height: 100%;
   overflow: hidden;
-  body{
+
+  body {
     height: 100%;
     background-image: url("/images/bg.jpg");
     background-repeat: no-repeat;
@@ -13,15 +14,21 @@ html{
     font-weight: 100;
     overflow: hidden;
   }
-  #__nuxt,#__layout{
+
+  #__nuxt,
+  #__layout {
     height: 100%;
   }
 }
 
-.height-100{
+.height-100 {
   height: 100%;
 }
-a,a:hover,a:visited,a:active{
+
+a,
+a:hover,
+a:visited,
+a:active {
   text-decoration: none;
   cursor: pointer;
 }
@@ -60,19 +67,22 @@ a,a:hover,a:visited,a:active{
   -ms-flex: 1;
   flex: 1;
 }
+
 .flex-align-start {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
+
 .flex-align-center {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
-.flex-align-end{
+
+.flex-align-end {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -129,22 +139,26 @@ a,a:hover,a:visited,a:active{
   flex-wrap: wrap;
 }
 
-.overflow-auto{
+.overflow-auto {
   overflow: auto;
 }
-.overflow-hidden{
+
+.overflow-hidden {
   overflow: hidden;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
 
-ul,li{
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.relative{
+
+.relative {
   position: relative;
 }
 
@@ -153,7 +167,7 @@ ul,li{
 
 
 
-.mobile-nav-btn{
+.mobile-nav-btn {
   display: none;
   color: #EA5038 !important;
   font-size: 26px;
@@ -164,20 +178,24 @@ ul,li{
   margin-right: 32px;
   z-index: 9;
 }
-.phone-header{
+
+.phone-header {
   margin: 30px 30px 0;
   display: none;
   position: relative;
-  .mobile-logo{
+
+  .mobile-logo {
     width: 150px;
     display: inline-block;
     color: #EA5038;
-    img{
+
+    img {
       width: 100%;
       height: auto;
     }
   }
-  .menu{
+
+  .menu {
     display: inline-block;
     position: absolute;
     right: 0;
@@ -190,29 +208,32 @@ ul,li{
 }
 
 
-.post-item{
-  .image{
+.post-item {
+  .image {
     overflow: hidden;
-    img{
+
+    img {
       width: 100%;
       transition: all 0.5s;
     }
   }
-  .content-warp{
+
+  .content-warp {
     padding: 10px;
-    background: rgba(112,100,93,0.6);
+    background: rgba(112, 100, 93, 0.6);
     transition: background-color 1s;
     -webkit-transition: background-color 1s;
     min-height: 0;
 
-    .title{
+    .title {
       font-size: 14px;
       color: #ffffff;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
-    .content{
+
+    .content {
       font-size: 12px;
       color: #9e9d99;
       line-height: 25px;
@@ -220,19 +241,21 @@ ul,li{
       white-space: normal;
       overflow: hidden;
     }
-    .other{
+
+    .other {
       text-align: right;
       margin-top: 30px;
-      span{
+
+      span {
         font-size: 12px;
         color: #9e9d99;
         margin: 0 30px;
 
-        &:last-child{
+        &:last-child {
           margin-right: 0;
         }
 
-        i{
+        i {
           font-size: 12px;
           color: #9e9d99;
           margin: 0 5px;
@@ -241,17 +264,23 @@ ul,li{
       }
     }
   }
-  &:hover{
-    .content-warp{
-      background: rgba(234,80,56,0.6);
+
+  &:hover {
+    .content-warp {
+      background: rgba(234, 80, 56, 0.6);
     }
-    .image{
-      img{
-        transform:scale(1.2);
-        -ms-transform:scale(1.2); 	/* IE 9 */
-        -moz-transform:scale(1.2); 	/* Firefox */
-        -webkit-transform:scale(1.2); /* Safari 和 Chrome */
-        -o-transform:scale(1.2); 	/* Opera */
+
+    .image {
+      img {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+        -moz-transform: scale(1.2);
+        /* Firefox */
+        -webkit-transform: scale(1.2);
+        /* Safari 和 Chrome */
+        -o-transform: scale(1.2);
+        /* Opera */
       }
     }
   }
@@ -261,32 +290,36 @@ ul,li{
 /*滚动条的宽度*/
 
 ::-webkit-scrollbar {
-  width:6px;
-  height:6px;
+  width: 4px;
+  height: 6px;
 }
 
 /*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果*/
 
 ::-webkit-scrollbar-track {
-  width: 6px;
-  background-color:transparent;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  border-radius:2em;
+  width: 4px;
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 /*滚动条的设置*/
 
 ::-webkit-scrollbar-thumb {
-  background-color:#ea5038;
-  background-clip:padding-box;
-  min-height:28px;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  border-radius:2em;
+  background-color: #ea5038;
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
+
 /*滚动条移上去的背景*/
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#fff;
+  background-color: rgb(36, 32, 31);
 }
+
+
+

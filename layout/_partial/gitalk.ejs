@@ -1,5 +1,14 @@
 <div id="gitalk-container"></div>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<style>
+    .hljs {
+        display: block !important;
+        overflow-x: auto !important;
+        background: #2b2b2b !important;
+        color: #f8f8f2 !important;
+        padding: .5em !important;
+    }
+</style>
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
@@ -8,7 +17,7 @@
         repo: '<%- theme.gitalk.repo %>',
         owner: '<%- theme.gitalk.owner %>',
         admin: ['<%- theme.gitalk.admin %>'],
-        id: '<%- post.title %>', // Ensure uniqueness and length less than 50
+        id: '<%- page.abbrlink %>', // Ensure uniqueness and length less than 50
         distractionFreeMode: false // Facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')

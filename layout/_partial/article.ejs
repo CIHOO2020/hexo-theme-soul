@@ -3,14 +3,16 @@
         <div class="article-content-container">
             <div class="article-title row">
                 <div class="title"><%= post.title %></div>
-                <div class=" other"><!--<i class="iconfont icon-iconfontordinaryliulan"></i> 56--> <i class="iconfont icon-shijian"></i>· <%- date(post.date, 'MMM D, YYYY') %> ·</div>
+                <div class=" other">
+                    <!--<i class="iconfont icon-iconfontordinaryliulan"></i> 56--> <i
+                        class="iconfont icon-shijian"></i>· <%- date(post.date, 'MMM D, YYYY') %> ·</div>
             </div>
             <div class="article-message markdown-body">
                 <article class="text" v-highlight>
                     <%- post.content %>
                 </article>
             </div>
-
+            <%- partial('./gitalk') %>
         </div>
     </div>
 </div>
@@ -24,4 +26,3 @@
         });
     });
 </script>
-
